@@ -1,3 +1,4 @@
+// Alberto é o bala!!
 // Desafio 1
 function compareTrue() {
   // seu código aqui
