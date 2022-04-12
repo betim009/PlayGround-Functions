@@ -1,23 +1,12 @@
-// Alberto é o bala!!
-
-
 // Desafio 1
 function compareTrue(a, b) {
   // seu código aqui
-  if(a === true && b === true){
-    console.log(true);
+  if (a === true && b === true) {
     return true;
-  }
-  else {
-    console.log(false)
+  } else {
     return false;
   }
 }
-compareTrue(false, true);
-
-
-
-
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
@@ -25,40 +14,19 @@ function calcArea(base, height) {
   console.log(areaTriangle);
   return areaTriangle;
 }
-calcArea(51, 1);
-
-
-
-
-
-
 // Desafio 3
-
 function splitSentence(string) {
   // seu código aqui
   var splits = string.split(' ');
   return splits;
-
 }
-console.log(splitSentence('go Trybe'))
-
-
-
-
-
 // Desafio 4
 function concatName(array) {
   // seu código aqui
   let first = array[0];
-  let last = array[array.length-1];
-  return (last +", " + first);
-  }
-
-console.log(concatName(['foguete', 'não', 'tem', 'ré']));
-
-
-
-
+  let last = array[array.length - 1];
+  return last + ', ' + first;
+}
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
@@ -66,12 +34,6 @@ function footballPoints(wins, ties) {
   ties = ties * 1;
   return wins + ties;
 }
-console.log(footballPoints(0, 0))
-
-
-
-
-/*
 // Desafio 6
 function highestCount() {
   // seu código aqui
@@ -113,4 +75,4 @@ module.exports = {
   splitSentence,
   techList,
 };
-*/
+
