@@ -1,8 +1,19 @@
 // Alberto é o bala!!
+
 // Desafio 1
+let a = true;
+let b = true;
+
 function compareTrue() {
   // seu código aqui
+  if(a === true && b === true){
+    console.log(true);
+  }
+  else {
+    console.log(false)
+  }
 }
+compareTrue(a, b);
 
 // Desafio 2
 function calcArea() {
