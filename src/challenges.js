@@ -99,22 +99,42 @@ function fizzBuzz(array) {
     }
   }
   return resultado;
-  //console.log(resultado)
 }
-//fizzBuzz([2, 15, 7, 9, 45]);
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
+  string = string.replace(/a/gi, '1');
+  string = string.replace(/e/gi, '2');
+  string = string.replace(/i/gi, '3');
+  string = string.replace(/o/gi, '4');
+  string = string.replace(/u/gi, '5');
+  return string;
 }
-function decode() {
+function decode(string) {
   // seu código aqui
+  string = string.replace(/1/gi, 'a');
+  string = string.replace(/2/gi, 'e');
+  string = string.replace(/3/gi, 'i');
+  string = string.replace(/4/gi, 'o');
+  string = string.replace(/5/gi, 'u');
+  return string;
 }
-
 // Desafio 10
-function techList() {
+function techList(array, name) {
   // seu código aqui
+  let newArray = [];
+  if(array[0] != undefined){
+    for (const element of array.sort()) {
+      newArray.push({
+        tech: element, name: name
+      })
+    }
+  } else{
+    return 'Vazio!';
+  }
+  
+  return newArray;
 }
-
 module.exports = {
   calcArea,
   catAndMouse,
