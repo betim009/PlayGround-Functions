@@ -84,10 +84,24 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(array) {
   // seu código aqui
+  resultado = [];
+  for (const element of array) {
+    if(element % 3 === 0 && element % 5 === 0){
+      resultado.push("fizzBuzz");
+    } else if(element % 3 === 0){
+      resultado.push("fizz");
+    } else if(element % 5 === 0){ 
+      resultado.push("buzz");
+    } else if (element % 3 != 0 && element % 5 != 0){
+      resultado.push("bug!");
+    }
+  }
+  return resultado;
+  //console.log(resultado)
 }
-
+//fizzBuzz([2, 15, 7, 9, 45]);
 // Desafio 9
 function encode() {
   // seu código aqui
