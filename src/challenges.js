@@ -35,15 +35,54 @@ function footballPoints(wins, ties) {
   return wins + ties;
 }
 // Desafio 6
-function highestCount() {
+function highestCount(array) {
   // seu código aqui
-}
+  let contador = 0;
+  let maxNumber = -9990;
 
+  for (const element of array) {
+    if (element >= maxNumber) {
+      maxNumber = element;
+    }
+  }
+
+  for (const element of array) {
+    if (maxNumber === element) {
+      contador = contador + 1;
+    }
+  }
+  return contador;
+}
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-}
+  if (mouse < cat1) {
+    cat1 = cat1 - mouse;
+  } else {
+    mouse = mouse - cat1;
+  }
+  if (mouse < cat2) {
+    cat2 = cat2 - mouse;
+  } else {
+    mouse = mouse - cat2;
+  }
+  if (cat1 === 0) {
+    cat1 = cat1 + 1;
+  }
+  if (cat2 === 0) {
+    cat1 = cat1 + 1;
+  }
 
+  if (cat1 > cat2) {
+    return 'cat2';
+    //console.log('cat2')
+  } else if (cat2 > cat1) {
+    return 'cat1';
+    //console.log('cat1');
+  } else {
+    return 'os gatos trombam e o rato foge';
+  }
+}
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
@@ -75,4 +114,3 @@ module.exports = {
   splitSentence,
   techList,
 };
-
