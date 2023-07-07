@@ -1,5 +1,5 @@
 # Boas vindas!
-  Seja bem bindo ao repositório Playground Functions
+  Seja bem vindo ao repositório Playground Functions
 
 # Habilidades
 
